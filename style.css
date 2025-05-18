@@ -291,8 +291,19 @@ main div{
     width: 10rem;
 }
 
+.logo-departemen .ict-div{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+
 .logo-departemen div .ict {
-    width: 150px;
+    width:170px;
+    padding-top: 1rem;
+}
+
+.logo-departemen .ict-div a h3{
+    padding-top: 1rem;
 }
 
 .logo-departemen div .litbang {
