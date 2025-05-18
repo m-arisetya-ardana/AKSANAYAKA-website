@@ -1,0 +1,479 @@
+:root {
+    --color-satu: #ae00ff;
+    --color-dua: #ffffff;
+    --color-tiga: #4b0069;
+    --color-bg: #200124;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #200124;
+}
+
+body {
+    /* background-color: var(--color-bg); */
+    background: linear-gradient(180deg, var(--color-tiga), var(--color-bg));
+    font-family: sans-serif;
+    color: white;
+    overflow-x: hidden;
+    /* min-height: 4000px; */
+}
+
+/* NAVBAR START */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 5%;
+    border-bottom: 1px solid var(--color-satu);
+    background-color: #20012477;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* backdrop-filter: blur(10px); */
+    z-index: 9999;
+}
+
+.header .logo {
+    margin: 0 1rem;
+}
+
+.header .logo a {
+    color: var(--color-dua);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.header .logo span {
+    color: var(--color-satu);
+}
+
+.header .navbar a {
+    color: var(--color-dua);
+    margin: 0 1rem;
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.header .navbar a:hover {
+    color: var(--color-satu);
+}
+
+.header .side-nav a {
+    color: var(--color-dua);
+    margin: 0 1rem;
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.header .side-nav a:hover {
+    color: var(--color-satu);
+}
+
+.gradient{
+    content: '';
+    position: absolute;
+    position: fixed;
+    background-color: var(--color-bg);
+    width: 100%;
+    height: 8rem;
+    z-index: 999;
+    -webkit-mask-image: linear-gradient(#200124 70%, #01010100);
+    mask-image: linear-gradient(#200124 70%, #01010100);
+    
+}
+
+/* NAVBAR END */
+
+/* HERO SECTION START */
+/* .background{
+    content: '';
+    position: absolute;
+    height: 50rem;
+    width: 50rem;
+    background-color: aqua;
+    right: -50%;
+    top: 15rem;
+    border-radius: 50%;
+
+} */
+
+.bpi-hero {
+    padding: 10rem 0 0rem;
+    background-color: var(--color-bg);
+    border-bottom: 0.5rem solid var(--color-tiga);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.61);
+}
+
+.bpi-hero main {
+    display: flex;
+    justify-content: center;
+}
+
+.bpi-hero main div {
+    margin-bottom: 4rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.bpi-hero main div img{
+  width: 80%;
+}
+
+.bpi-hero main .isi-hero {
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+    justify-content: center;
+    width: 50%;
+    padding: 2rem 2rem;
+}
+
+.bpi-hero main .isi-hero h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.bpi-hero main .isi-hero h1 span {
+    color: var(--color-satu);
+}
+
+.bpi-hero main .isi-hero p {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+.judul-dokumentasi div {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.judul-dokumentasi div h1 {
+    font-size: 40px;
+}
+
+/* Dokumentasi */
+
+.dokumentasi {
+    display: flex;
+    justify-content: center;
+    /* gap: 1rem; */
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    box-sizing: border-box;
+}
+
+.dokumentasi div {
+    /* padding-left: 1rem; */
+    /* flex: 1 1 300px; */
+    width: 35%;
+    padding: 0 5rem;
+}
+
+.dokumentasi div img {
+    width: 80%;
+    height: auto;
+    padding: 2rem 2rem;
+    background-color: var(--color-tiga);
+    border-radius: 15px;
+    border: 1px solid var(--color-satu);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
+}
+
+.program-kerja {
+    margin-top: 3rem;
+}
+
+/* ANGGOTA DEPARTEMEN */
+
+.anggota-departemen {
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0rem 0rem;
+}
+
+.anggota-departemen div h1 {
+    font-size: 40px;
+}
+
+/* FOTO ANGGOTA */
+
+.foto-anggota-departemen {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+}
+
+.foto-anggota-departemen div {
+    margin: 0 4rem;
+    /* background-color: aqua; */
+}
+
+.foto-anggota-departemen div a img {
+    width: 14rem;
+    height: 15rem;
+}
+
+.foto-anggota-departemen div a {
+    text-align: center;
+}
+
+.foto-anggota-departemen div a {
+    color: white;
+    transition: 0.3s;
+}
+
+.foto-anggota-departemen div a:hover {
+    color: var(--color-satu);
+}
+
+/* PROGRAM KERJA */
+
+.proker {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background-color: aqua; */
+    padding-top: 8rem;
+}
+
+.proker div h1 {
+    font-size: 40px;
+}
+
+.proker div h1 span {
+    color: var(--color-satu);
+}
+
+.isi-proker {
+    margin: 2rem 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.isi-proker div {
+    background-color: var(--color-tiga);
+    border: 1px solid var(--color-satu);
+    box-shadow: 3px 3px 10px #000;
+    width: 20rem;
+    text-align: center;
+    margin: 3rem 3rem;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+
+
+/* .back{
+    content: '';
+    position: absolute;
+    height: 20rem;
+    top: 50.7rem;
+    background-color: rgba(255, 0, 0, 0.616);
+    border-top: 2rem solid #ffa600;
+    border-bottom: 2rem solid #ffa600;
+    width: 100%;
+    z-index: -4;
+} */
+
+/* HERO SECTION END */
+
+/* FOOTER START */
+.footer {
+    margin-top: 4rem;
+    padding: 1.4rem 0;
+    width: 100%;
+    background-color: var(--color-tiga);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--color-satu);
+}
+
+.footer div {
+    padding: 0.3rem 0;
+}
+
+.footer div .footer-aksanayaka {
+    font-weight: 700;
+}
+
+.footer div a {
+    color: var(--color-dua);
+}
+
+.footer div a:hover {
+    color: var(--color-bg);
+}
+
+/* FOOTER END */
+
+/* MEDIA QUERIES */
+/* LAPTOP */
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .bpi-hero main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bpi-hero main .isi-hero {
+    width: 90%;
+    padding: 1rem 1rem;
+  }
+
+  .bpi-hero main .isi-hero h1 {
+    font-size: 32px;
+  }
+
+  .bpi-hero main .isi-hero p {
+    font-size: 18px;
+    padding-top: 1rem;
+  }
+
+  /* .dokumentasi {
+    flex-wrap: wrap;
+    justify-content: center;
+  }*/
+
+  .dokumentasi div {
+    padding: 0rem 2rem;
+
+  }
+
+  .dokumentasi div img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  } 
+
+  .foto-anggota-departemen div {
+    margin: 1.5rem;
+  }
+
+  .foto-anggota-departemen div a img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .isi-proker {
+    flex-direction: column;
+  }
+
+  .isi-proker div {
+    width: 90%;
+    margin: 1rem 0;
+  }
+}
+
+/* HP / Mobile (max-width: 600px) */
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .header .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .header .navbar a {
+    font-size: 16px;
+    margin: 0.3rem 0.7rem;
+  }
+
+  .bpi-hero main {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .bpi-hero main .isi-hero {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .bpi-hero main .isi-hero h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .bpi-hero main .isi-hero p {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 0.8rem;
+  }
+
+  .dokumentasi {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dokumentasi div {
+    padding: 0.5rem 0;
+    width: 90%;
+  }
+
+  .dokumentasi div img {
+    width: 100%;
+    height: auto;
+  }
+
+  .foto-anggota-departemen {
+    flex-direction: column;
+  }
+
+  .foto-anggota-departemen div {
+    margin: 1rem 0;
+  }
+
+  .foto-anggota-departemen div a img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .isi-proker {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .isi-proker div {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
