@@ -11,6 +11,8 @@
     text-decoration: none;
     outline: none;
     border: none;
+    user-select: none;
+    -webkit-user-drag: none;
     /* outline: 1px solid red !important; */
 }
 

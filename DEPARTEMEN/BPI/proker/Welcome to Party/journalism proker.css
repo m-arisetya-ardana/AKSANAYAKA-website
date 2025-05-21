@@ -11,6 +11,8 @@
     text-decoration: none;
     outline: none;
     border: none;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 html{
@@ -99,11 +101,15 @@ body {
   padding: 40px 20px;
 }
 
-h1 {
+.container h1 {
   text-align: center;
   padding-top: 5rem;
   margin-bottom: 50px;
   color: #ffffff;
+}
+
+.container h1 span{
+  color:var(--color-satu);
 }
 
 .article-section {
