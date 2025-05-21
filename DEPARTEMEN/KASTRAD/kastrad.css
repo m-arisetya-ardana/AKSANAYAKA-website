@@ -284,6 +284,10 @@ body {
     border-radius: 15px;
 }
 
+.isi-proker div a h1,
+.isi-proker div a p{
+  color: white;
+}
 
 
 /* .back{

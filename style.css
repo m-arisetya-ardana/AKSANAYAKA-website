@@ -41,22 +41,24 @@ body {
 }
 
 /* NAVBAR START */
-main div{
+/* main div{
     content: '';
     position: absolute;
     background-color: beige;
     margin-top: 10rem;
     position: fixed;
-}
+} */
 
 .header {
     display: flex;
+    top: -2px;
+    left: -2px;
     justify-content: space-around;
     align-items: center;
     padding: 1.4rem 0;
     border-bottom: 1px solid var(--color-satu);
     position: fixed;
-    width: 100%;
+    width: 102%;
     background-color: #20012493;
     backdrop-filter: blur(10px);
     z-index: 9999;
@@ -246,8 +248,21 @@ main div{
 
 /* DEPARTEMEN */
 
+.background-departemen{
+    /* background-image: url(Backgorund/pelantikan.jpg); */
+    background-color: #0f0111;
+    box-shadow: 0px 10px 30px #000;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+    border-top: 2rem solid var(--color-satu);
+    border-bottom: 2px solid var(--color-satu);
+}
+
+
 .departemen div {
-    padding-top: 7rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,6 +271,7 @@ main div{
 
 .departemen div h1 {
     font-size: 40px;
+    padding-top: 3rem;
 }
 
 .departemen div h1 span {
