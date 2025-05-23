@@ -375,12 +375,12 @@ body {
   } 
 
   .foto-anggota-departemen div {
-    margin: 1.5rem;
+    margin: 1rem 4rem;
   }
 
   .foto-anggota-departemen div a img {
-    width: 12rem;
-    height: 12rem;
+    width: 11rem;
+    height: 15rem;
   }
 
   .isi-proker {
@@ -451,16 +451,19 @@ body {
   }
 
   .foto-anggota-departemen {
-    flex-direction: column;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .foto-anggota-departemen div {
-    margin: 1rem 0;
+    margin: 1rem 4rem;
   }
 
   .foto-anggota-departemen div a img {
-    width: 10rem;
-    height: 10rem;
+    width: 11rem;
+    height: 115rem;
   }
 
   .isi-proker {
