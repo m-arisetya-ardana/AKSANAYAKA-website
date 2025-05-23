@@ -218,12 +218,12 @@ body {
 }
 
 .foto-anggota-departemen div {
-    margin: 0 4rem;
+    margin: 1rem 4rem;
     /* background-color: aqua; */
 }
 
 .foto-anggota-departemen div a img {
-    width: 14rem;
+    width: 11rem;
     height: 15rem;
 }
 
